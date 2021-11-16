@@ -18,14 +18,16 @@ print(sum)
 
 Exercise 3:
 
-total_score = 0
+highest=0
+total_score=0
 for i in range(3):
-  my_score = int(input("Enter number: "))
-  if my_score > 300 or my_score < 0:
-    print("Invalid: score 0")
-    my_score = 0
-  total_score += my_score
-print("The 3 game total is: ", total_score)
-
-my_score <= highest_score
-print("The highest score is:", highest_score)
+  for i in range(3):
+    myscore= int(input("what is yourscore 1-300: "))
+    while myscore < 0 or myscore > 300:
+      print("invalid")
+      myscore= int(input("try again 1-300: "))
+    total_score += myscore
+  if highest < total_score:
+    highest = total_score
+  total_score=0
+print(highest)
