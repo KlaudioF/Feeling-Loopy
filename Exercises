@@ -1,0 +1,12 @@
+Exercise 1:
+
+for i in range(2, 15, 3):
+  print(i)
+ 
+i = 2
+while i <= 14:
+  print(i)
+  i += 3
+  
+Exercise 2:
+
