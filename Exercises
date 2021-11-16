@@ -13,4 +13,5 @@ Exercise 2:
 sum = 0
 value = int(input("Enter number up to 100: "))
 for i in range(value + 1):
-  print(i)
+  sum = sum + i
+print(sum)
