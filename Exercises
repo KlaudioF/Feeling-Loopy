@@ -15,3 +15,17 @@ value = int(input("Enter number up to 100: "))
 for i in range(value + 1):
   sum = sum + i
 print(sum)
+
+Exercise 3:
+
+total_score = 0
+for i in range(3):
+  my_score = int(input("Enter number: "))
+  if my_score > 300 or my_score < 0:
+    print("Invalid: score 0")
+    my_score = 0
+  total_score += my_score
+print("The 3 game total is: ", total_score)
+
+my_score <= highest_score
+print("The highest score is:", highest_score)
