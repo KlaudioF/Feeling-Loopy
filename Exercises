@@ -78,6 +78,6 @@ while correct:
     print("WRONG") 
     correct = False
   else:
-    print("correct")
+    print("Correct")
     score+=1 
-print("you were right",score,"times")
+print("You were right",score,"times.")
