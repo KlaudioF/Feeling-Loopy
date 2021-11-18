@@ -58,3 +58,26 @@ if hitpoints > 0:
   print("The game is over because you are horrible and don't want to play anymore. You survived",rounds,"rounds.")
 else:
   print("You have died. You survived",rounds,"rounds. I think you can do better.")
+  
+Exercise 5:
+
+for i in range(3):
+  print("No homework tonight.")
+  for i in range(i+1):
+    print("Please.")
+    
+ Exercise 6:
+ 
+import random 
+score=0
+correct = True 
+while correct: 
+  flip = random.randint(0,1) 
+  guess = int(input("Heads/Tails?(h=1/t=0) ")) 
+  if flip != guess: 
+    print("WRONG") 
+    correct = False
+  else:
+    print("correct")
+    score+=1 
+print("you were right",score,"times")
