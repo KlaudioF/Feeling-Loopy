@@ -30,3 +30,31 @@ for i in range(3):
     highest_score = my_score
 print("The 3 game total is:", total_score)
 print("Your high game is:", highest_score)
+
+Exercise 4:
+
+rounds=0
+hitpoints=100
+import random
+
+while hitpoints >0:
+  player= input("Do you wish to continue y for yes n for no: ")
+  if player =="y":
+    damage= random .randint(0,100)
+    hitpoints -= damage
+    if hitpoints > 0:
+      print("You survived the round.")
+      rounds+=1
+    else:
+      print("Wow you did't even survive the round.")
+      break
+    print("You have", hitpoints, "hitpoints left.")
+  elif player =="n":
+    print("Alright what ever you say peasant.")
+    break
+  else:
+    print("You had one job do you not know how to type. Try again.")
+if hitpoints > 0:
+  print("The game is over because you are horrible and dont want to play anymore. You survived",rounds,"rounds.")
+else:
+  print("You have died. You survived",rounds,"rounds. I think you can do better.")
